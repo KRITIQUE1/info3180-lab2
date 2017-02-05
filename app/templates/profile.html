@@ -1,27 +1,31 @@
 {% extends "base.html" %}
 
 {% block main %}
-<html>
-    <head>
-        <title> </title>
-    </head>
+  <style>  
+    div.padded {  
+      padding-top: 10px;  
+      padding-right: 0px;  
+      padding-bottom: 0.25in;  
+      padding-left: 5em;  
+    }  
+  </style>  
     <body>
-        <h1>Profile</h1>
+        <h1 class="page-header">Profile</h1>
         <br>
         <hr>
-        <div>
+        <div class="padded">
             <img src= "https://lh3.googleusercontent.com/QOUM_fPu0q7TTCCwrgOgQX1JfEcnWJK97EUzFJ-tqfPcMHBSUUXptSQ6GR2opw_zfMQ=w300" align= "left" >
         </div>
-        <div>
+        <div class="padded">
             <h3>Son Goku</h3>
-            <p>Todays date is {{time}}</p>
+            <p>Todays date is {{ now }}</p>
+            <hr>
             <p><b>Username:</b> Goku</p>
             <p><b>ID Number:</b> 620067797</p>
             <p><b>Age:</b> 24</p>
             <p><b>Gender:</b> Male</p>
-            <br><br>
+            <br><hr><br>
             <p>I am a lengendary super saiyan</p>
         </div>
     </body>
-</html>
 {% endblock %}
